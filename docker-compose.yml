@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  pipelinetests:
+    image: ${DOCKER_REGISTRY}pipelinetests
+    build:
+      context: .
+      dockerfile: PipelineTests\Dockerfile
